@@ -30,6 +30,12 @@
     width: 350px;
     object-fit: cover;
   }
+  .completed {
+    color: rgb(39, 206, 33);
+  }
+  .uncompleted {
+    color: rgb(209, 37, 37);
+  }
   </style>
 </head>
 <body>
@@ -54,21 +60,21 @@
     	<article class="well">
 		<h4>Лабораторна робота №1</h4> 
         <p>Короткий опис завдання</p>
-        <p><a href="#">Посилання на репозиторій</a></p> 
+        <p><a class="completed" href="https://github.com/shonker108/znu-web-development">Посилання на репозиторій</a></p> 
         </article>
   	</div>
     <div class="col-sm-4">
     	<article class="well">
 		<h4>Лабораторна робота №2</h4> 
         <p>Короткий опис завдання</p>
-        <p><a href="#">Посилання на репозиторій</a></p> 
+        <p><a href="#" class="uncompleted">Посилання на репозиторій</a></p> 
         </article>
   	</div>
     <div class="col-sm-4">
     	<article class="well">
 		<h4>Лабораторна робота №3</h4> 
         <p>Короткий опис завдання</p>
-        <p><a href="#">Посилання на репозиторій</a></p> 
+        <p><a href="#" class="uncompleted">Посилання на репозиторій</a></p> 
         </article>
   	</div>
   </div>
