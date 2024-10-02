@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: min-content;
+        }
+
+        .photo img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        blockquote {
+            padding: 5px;
+            background-color: grey;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Особиста сторінка (блог) Щербаня Артура Вікторовича</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./rozklad.html">Мій розклад</a></li>
+            <li><a href="./news.html">Останні новини</a></li>
+            <li><a href="./photo.html">Фото</a></li>
+            <li>Відео</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Lorem, ipsum dolor.</h2>
+
+            <div class="photo">
+                <img src="./pfp.jpg" alt="Моє фото">
+
+                <caption>Lorem.</caption>
+            </div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas mollitia beatae eaque ipsum, aliquid corporis eligendi illo doloribus nemo suscipit eveniet ex optio deserunt nobis esse velit hic repudiandae? Fugiat modi vero soluta dicta praesentium quam adipisci culpa, voluptatibus rerum sunt hic odit commodi minus fuga nam reiciendis veniam laboriosam!</p>
+            
+        </section>
+
+        <section>
+            <h2>Lorem.</h2>
+            
+            <blockquote>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, sequi.
+            </blockquote>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos earum tempora voluptatibus cumque repellendus laboriosam!</p>
+
+            <ol>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ol>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut!</p>
+        </section>
+    </main>
+    <footer>
+        Copyright 2024. Усі права захищені.
+    </footer>
+</body>
+</html>

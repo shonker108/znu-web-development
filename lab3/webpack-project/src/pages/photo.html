@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: min-content;
+        }
+
+        .photo img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border: 1px solid black;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Особиста сторінка (блог) Щербаня Артура Вікторовича</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./rozklad.html">Мій розклад</a></li>
+            <li><a href="./news.html">Останні новини</a></li>
+            <li><a href="./photo.html">Фото</a></li>
+            <li>Відео</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Фотоальбом</h2>
+
+            <div class="flex">
+                <div class="photo">
+                    <a href="./1.jpg" target="_blank"><img src="./1.jpg" alt="1"></a>
+                    
+                    <caption>Город (640x423)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./2.jpg" target="_blank"><img src="./2.jpg" alt="2"></a>
+                    
+                    <caption>Череп (640x417)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./3.jpg" target="_blank"><img src="./3.jpg" alt="3"></a>
+                    
+                    <caption>Портові крани (640x462)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./4.jpg" target="_blank"><img src="./4.jpg" alt="4"></a>
+                    
+                    <caption>Гарбузи (640x360)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./5.jpg" target="_blank"><img src="./5.jpg" alt="5"></a>
+                    
+                    <caption>Богомол (640x426)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./6.jpg" target="_blank"><img src="./6.jpg" alt="6"></a>
+                    
+                    <caption>Море (640x359)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./7.jpg" target="_blank"><img src="./7.jpg" alt="7"></a>
+                    
+                    <caption>Абстракція (640x426)</caption>
+                </div>
+    
+                <div class="photo">
+                    <a href="./8.jpg" target="_blank"><img src="./8.jpg" alt="8"></a>
+                    
+                    <caption>Метелик (640x446)</caption>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        Copyright 2024. Усі права захищені.
+    </footer>
+</body>
+</html>

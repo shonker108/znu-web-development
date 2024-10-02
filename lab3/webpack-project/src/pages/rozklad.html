@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: center;
+            min-width: 200px;
+        }
+
+        tr:nth-child(odd) {
+            background: rgb(195, 195, 195);
+        }
+
+        tr:nth-child(1) {
+            background: rgb(145, 184, 181);
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Особиста сторінка (блог) Щербаня Артура Вікторовича</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Головна</a></li>
+            <li><a href="./rozklad.html">Мій розклад</a></li>
+            <li><a href="./news.html">Останні новини</a></li>
+            <li><a href="./photo.html">Фото</a></li>
+            <li>Відео</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Мій розклад</h2>
+
+            <table>
+                <tr>
+                  <th>Час</th>
+                  <th>Понеділок</th>
+                  <th>Вівторок</th>
+                  <th>Середа</th>
+                  <th>Четвер</th>
+                  <th>П'ятниця</th>
+                </tr>
+                <tr>
+                  <th>11:25</th>
+                  <td>-</td>
+                  <td>Мови програмування моб. пристороїв - Дребезов (З)</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th>12:55</th>
+                  <td>Веб-програмування - Дребезов</td>
+                  <td>Інженерія даних - Кудін</td>
+                  <td>Сист. віртуал. та контейн. - Мухін (Ч)</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th>14:30</th>
+                  <td>Аналіз вимог до ПЗ - Мильцев</td>
+                  <td>Інженерія даних - Кудін (Ч)</td>
+                  <td>Веб-програмування - Ракша</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <th>16:05</th>
+                  <td>Сист. віртуал. та контейн. - Лісняк (Ч)</td>
+                  <td>-</td>
+                  <td>Аналіз вимог до ПЗ - Мильцев</td>
+                  <td>-</td>
+                  <td>Сист. віртуал. та контейн. - Мухін</td>
+                </tr>
+                <tr>
+                  <th>17:40</th>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>Мови програмування моб. пристороїв - Дребезов</td>
+                </tr>
+              </table>
+
+              <caption id="legend">"Ч" - чисельник, "З" - займенник</caption>
+        </section>
+    </main>
+    <footer>
+        Copyright 2024. Усі права захищені.
+    </footer>
+</body>
+</html>
