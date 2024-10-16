@@ -1,0 +1,133 @@
+color1 = #BE008A
+color2 = #8F2471 
+color3 = #7C005A
+color4 = #DF38B1 
+color5 = #DF64BD
+
+body
+    margin: 0
+    background-repeat: no-repeat
+    background-attachment: fixed
+    padding: 10px 30px
+    background: 
+        linear-gradient(218deg, color5, transparent 70.71%),
+        linear-gradient(127deg, color2, transparent 70.71%),
+        linear-gradient(336deg, color3, transparent 70.71%)
+
+main
+    display: flex
+    flex-direction: column
+    align-items: center
+
+section
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 700px
+
+table, th, td
+    border: 1px solid black
+    border-collapse: collapse
+
+
+th, td
+    padding: 5px
+    text-align: center
+    min-width: 200px
+
+
+tr:nth-child(odd)
+    background: color1
+
+tr:nth-child(1)
+    background: color2
+
+.photo
+  display: flex
+  flex-direction: column
+  align-items: center
+  width: min-content
+
+img
+    width: 200px
+    height: 200px
+    object-fit: cover
+
+blockquote
+  padding: 5px
+  background-color: color3
+
+footer
+  margin-top: 50px
+
+.flex
+    display: flex
+    flex-direction: column
+    gap: 50px
+
+.news-flex
+    display: flex
+    flex-direction: column
+    gap: 50px
+
+.news-article
+    display: flex
+    flex-direction: column
+    border: 1px solid black
+    width: 450px
+    box-sizing: border-box
+    background: color5
+
+.news-p
+    padding: 0 10px
+
+.news-img
+    width: 150px
+    height: 150px
+    object-fit: cover
+
+.photo
+& img
+    width: 250px
+    height: 250px
+    object-fit: cover
+
+@media (max-width: 700px)
+  section
+    width: 90%
+    margin: 0 auto
+
+  nav
+  & ul
+    display: flex
+    gap: 20px
+
+.ie-warning
+  display: none
+  background-color: #ffcc00
+  text-align: center
+  padding: 10px
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  .ie-warning
+    display: block
+
+@media print
+  header, footer, .menu
+    display: none
+
+  h1, h2, p
+    display: block
+
+  * 
+    background: none !important
+    color: black !important
+
+  a:before
+    content: attr(href) " "
+
+  body
+    font-family: 'Times New Roman', Georgia, Palatino, serif
+
+  @page
+    margin: 50px
